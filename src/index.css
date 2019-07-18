@@ -1,13 +1,51 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+html {
+	font: 400 18px/1.5 sans-serif;
+	background-color: #131112;
+	color: #fff;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 480px;
+	background-color: #fff;
+	color: #111;
+}
+.header {
+	padding: 1em;
+	background-color: #279AF1;
+	color: #fff;
+}
+.form {
+	display: flex;
+	align-items: center;
+}
+.input {
+	font-size: 18px;
+	line-height: 2;
+	border: 0;
+	margin-right: 3px;
+	padding: 0 .5em;
+	background-color: rgba(255,255,255,.5);
+	color: #000;
+	outline-color: #fff;
+	width: calc(100% - 2em);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.submit {
+	font-size: 20px;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: transparent;
+	color: #000;
+	outline-color: #fff;
+	margin-left: auto;
 }
