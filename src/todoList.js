@@ -39,13 +39,17 @@ class TodoList extends Component {
 	render() {
 		return (
 			<main className="main">
-				<header className="header">
-					<form className="form" onSubmit={this.addItem}>
-						<input className="input" type="text" placeholder="New task" ref={(a) => this._inputElement = a} />
-						<button className="submit" type="submit">⏎</button>
-					</form>
-				</header>
-				<TodoItems entries={this.state.items} />
+				<div className="formWrap">
+					<header className="header">
+						<form className="form" onSubmit={this.addItem}>
+							<input className="input" type="text" required placeholder="New task" ref={(a) => this._inputElement = a} />
+							<button className="submit" type="submit">⏎</button>
+						</form>
+					</header>
+				</div>
+				<div className="listWrap">
+					<TodoItems entries={this.state.items} />
+				</div>
 			</main>
 		)
 	}

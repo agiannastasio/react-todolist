@@ -1,43 +1,59 @@
+:root {
+  --bg_body: #00A1E4;
+  --bg_box: #DC0073;
+  --bg_box: #222;
+  --bg_input: #89FC00;
+  --outline_color: #89FC00;
+}
 html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
 html {
-	font: 400 18px/1.5 sans-serif;
-	background-color: #131112;
-	color: #fff;
+	font: 400 18px/1.5 'Source Sans Pro', sans-serif;
+	color: #000;
+	background-color: var(--bg_body);
 }
 body {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 480px;
-	background-color: #fff;
 	color: #111;
 }
 .header {
 	padding: 1em;
-	background-color: #279AF1;
+	background-color: var(--bg_box);
 	color: #fff;
+	border-radius: 5px;
+	margin-top: .5em;
+	box-sizing: border-box;
 }
 .form {
 	display: flex;
 	align-items: center;
+}
+.fields {
+	position: relative;
+	margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
 }
 .input {
 	font-size: 18px;
 	line-height: 2;
 	border: 0;
 	margin-right: 3px;
-	padding: 0 .5em;
-	background-color: rgba(255,255,255,.5);
-	color: #000;
-	outline-color: #fff;
-	width: calc(100% - 2em);
+	padding: 0 .5rem;
+	background-color: #fff;
+	color: #111;
+	outline-color: var(--outline_color);
+	width: calc(100% - 1.5rem);
+	border-radius: 3px;
 }
-
 .submit {
-	font-size: 20px;
+	font-size: 25px;
 	width: 2em;
 	height: 2em;
 	text-align: center;
@@ -45,7 +61,18 @@ body {
 	cursor: pointer;
 	border-radius: 50%;
 	background-color: transparent;
-	color: #000;
-	outline-color: #fff;
+	color: var(--bg_input);
+	outline-color: var(--outline_color);
 	margin-left: auto;
+}
+.taskList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.taskItem {
+	padding: .5em 1em;
+	margin-top: .5em;
+	background-color: #fff;
+	border-radius: 3px;
 }

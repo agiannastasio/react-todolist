@@ -5,9 +5,4 @@ import TodoList from './todoList'
 
 const appContainer = document.querySelector('#app')
 
-ReactDOM.render (
-	<div>
-		<TodoList />
-	</div>,
-	appContainer
-)
+ReactDOM.render ( <TodoList />, appContainer )
