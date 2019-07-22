@@ -1,6 +1,8 @@
-Simple Todo List app created with React and "mobile-only" styling.
+Simple Todo List app created with React. Demo: https://agiannastasio.github.io/react-todolist/
+
 
 ---
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
